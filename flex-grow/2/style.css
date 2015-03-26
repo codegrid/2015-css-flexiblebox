@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+.flex-container {
+    display: flex;
+    width: 400px;
+    height: 200px;
+    background: #ccc;
+}
+.flex-item {
+    flex-grow: 1;
+    flex-basis: 50px;
+    background-color: tomato;
+}
+.flex-item:nth-child(even) {
+    background-color: orange;
+}
