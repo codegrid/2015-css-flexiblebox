@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+}
+.flex__item-1 { flex: 100%; } /* 1 1 100% */
+.flex__item-2 { flex: 1 100px; } /* 1 1 100px */
+.flex__item-3 { flex: 3; } /* 3 1 0% */
+.flex__item-4 { flex: 50px;} /* 1 1 50px */
+.flex__item-5 { flex: 1 100%; } /* 1 1 100% */
+
+/* theme */
+.flex {
+  background-color: gold;
+}
+[class^=flex__] {
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  margin: 5px 0;
+}
+.flex__item-1 { background-color: chocolate; }
+.flex__item-2 { background-color: tomato; }
+.flex__item-3 { background-color: limegreen; }
+.flex__item-4 { background-color: purple; }
+.flex__item-5 { background-color: skyblue; }
