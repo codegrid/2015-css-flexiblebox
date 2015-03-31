@@ -1,18 +1,9 @@
 @charset "UTF-8";
 
 .flex { display: flex; width: 900px; }
-.flex__item-1 {
-  flex-basis: 100px;
-  flex-grow: 1;
-}
-.flex__item-2 {
-  flex-basis: 200px;
-  flex-grow: 4;
-}
-.flex__item-3 {
-  flex-basis: 300px;
-  flex-grow: 2;
-}
+.flex__item-1 { flex-basis: 500px; }
+.flex__item-2 { flex-basis: 400px; }
+.flex__item-3 { flex-basis: 300px; }
 
 /*theme*/
 .flex { background-color: gray; }
