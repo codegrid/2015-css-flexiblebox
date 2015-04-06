@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width">
+<title>flex-shrink-demo</title>
+<style>
+.flex {
+  display: flex;
+  flex-flow: row nowrap;
+}
+[class*="flex__item"] {
+  flex-basis: 100px;
+}
+.flex--test-1 .flex__item-3 {
+  flex-shrink: 2;
+}
+.flex--test-2 .flex__item-3 {
+  flex-shrink: 2;
+}
+.flex--test-2 .flex__item-5 {
+  flex-shrink: 3;
+}
+.flex--test-3 [class*="flex__item"] {
+  flex-shrink: 0;
+}
+
+/* theme */
+.flex {
+  width: 300px;
+  border: 3px solid tomato;
+}
+.flex__item-1 {
+  background-color: orange;
+}
+.flex__item-2 {
+  background-color: limegreen;
+}
+.flex__item-3 {
+  background-color: gold;
+}
+.flex__item-4 {
+  background-color: skyblue;
+}
+.flex__item-5 {
+  background-color: pink;
+}
+h2{
+  font-size: 1em;
+}
+</style>
+</head>
+<body>
+<h2>すべてflex-shrink:1;(初期値)</h2>
+<div class="flex">
+  <div class="flex__item-1">1</div>
+  <div class="flex__item-2">2</div>
+  <div class="flex__item-3">3</div>
+  <div class="flex__item-4">4</div>
+  <div class="flex__item-5">5</div>
+</div>
+<h2>すべてflex-shrink:0;</h2>
+<div class="flex  flex--test-3">
+  <div class="flex__item-1">1</div>
+  <div class="flex__item-2">2</div>
+  <div class="flex__item-3">3</div>
+  <div class="flex__item-4">4</div>
+  <div class="flex__item-5">5</div>
+</div>
+<h2>3番目がflex-shrink:2;</h2>
+<div class="flex  flex--test-1">
+  <div class="flex__item-1">1</div>
+  <div class="flex__item-2">2</div>
+  <div class="flex__item-3">3</div>
+  <div class="flex__item-4">4</div>
+  <div class="flex__item-5">5</div>
+</div>
+<h2>3番目がflex-shrink:2;で、5番目がflex-shrink:3;</h2>
+<div class="flex  flex--test-2">
+  <div class="flex__item-1">1</div>
+  <div class="flex__item-2">2</div>
+  <div class="flex__item-3">3</div>
+  <div class="flex__item-4">4</div>
+  <div class="flex__item-5">5</div>
+</div>
+</body>
+</html>
