@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+.block {
+  /* flex container */
+  display: flex;
+  justify-content: flex-start;
+  /* style */
+  height: auto;
+  margin-bottom: 30px;
+  padding: 10px 5px;
+  background-color: silver;
+}
+
+.block__item {
+  margin: 0 5px;
+}
+
+.block__item--left-auto {
+  margin-left: auto;
+}

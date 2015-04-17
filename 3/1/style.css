@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+.block {
+  /* flex container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* style */
+  width: 400px;
+  height: 200px;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 6px;
+  background-color: skyblue;
+}
+
+.block__item {
+  box-sizing: border-box;
+  padding: 5px;
+  margin: 5px;
+  background-color: gold;
+}
+
+.block__item img {
+  vertical-align: top;
+}
