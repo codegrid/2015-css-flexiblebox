@@ -12,6 +12,12 @@
   background-color: skyblue;
 }
 
+/* 左右逆転するモディファイアを追加 */
+.block--rev {
+  /* flex container */
+  flex-direction: row-reverse;
+}
+
 .block__icon {
   /* flex container */
   flex: 0 0 auto;
