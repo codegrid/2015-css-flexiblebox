@@ -19,7 +19,7 @@
 }
 
 .block__icon {
-  /* flex container */
+  /* flex item */
   flex: 0 0 auto;
   /* style */
   margin: 0 5px;
